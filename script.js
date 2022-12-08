@@ -106,10 +106,10 @@
 
 
 // let result = a + b - c * 10 / 2 * 4;  //BODMAS  ---- Bracket Order Divide Multiply Addition Subtraction
-            // 20 + (30 - 40) * 10 / 2;
-            // 20 + (-10) *10 / 2;
-            // 20 + (-10) * 5;
-            // 20 - 50;
+// 20 + (30 - 40) * 10 / 2;
+// 20 + (-10) *10 / 2;
+// 20 + (-10) * 5;
+// 20 - 50;
 
 
 // console.log(result);
@@ -480,7 +480,7 @@
 //         break;
 //     }
 //     console.log(i)
-    
+
 //     i++
 // }
 
@@ -488,17 +488,48 @@
 // let temps = [23, 54, 64, 54, 45]
 
 // for (let i = 0; i < temps.length; i++) {
-    // temps[i] = (temps[i] * 1.8) + 32;
+// temps[i] = (temps[i] * 1.8) + 32;
 //     console.log(temps[i]);
 // }
 
 
 // temps.map((eachItem, i)=>{
-    // console.log(i, eachItem);
-    // temps[i] = "cat"
-    // console.log(temps[i])
+// console.log(i, eachItem);
+// temps[i] = "cat"
+// console.log(temps[i])
 // })
 
+
+// **************Nested For Loop******************
+
+// for(let i = 0; i<5; i++){
+//     document.write("Outer Loop: " + (i+1) + "<br>");
+
+//     for(let j =0; j<=i; j++){
+//         document.write("Inner Loop: " + (j+1) + "<br>");
+
+//     }
+
+// }
+
+// ***********EXAMPLE 1*****************
+
+// for(let i = 1; i<=100; i+=10){
+//     for(let j=i; j < i+10; j++){
+//         document.write(" innerloop: " + j)
+//     }
+//     document.write(" outerloop: " + "<br>")
+// }
+
+// ***********EXAMPLE 2*****************
+
+
+// for(let i =5; i>=0; i--){
+//     for(let j = 1; j<=i; j++){
+//         document.write(i + " ")
+//     }
+//     document.write("<br>")
+// }
 
 
 
@@ -549,12 +580,12 @@
 
 //     console.log(add(8,7))
 
-    // function cube(num){
-    //     let result = num**3;
-    //     return result;
-    // }
+// function cube(num){
+//     let result = num**3;
+//     return result;
+// }
 
-    // console.log(cube(8))
+// console.log(cube(8))
 
 // ES6 Function
 
@@ -565,9 +596,9 @@
 
 // -----------------------------------------
 
-    // let cube = num => num**3;
+// let cube = num => num**3;
 
-    // console.log(cube(4))
+// console.log(cube(4))
 
 
 
@@ -807,7 +838,7 @@
 
 
 // Get age from users and print if users age is less then 18 "you are not eligible for driving" and if users age is 18 and greater 18 then print "you are eligible for driving"
- 
+
 
 
 // let age = prompt("Enter your age");
@@ -840,7 +871,7 @@
 //          result = "A"
 //       document.write("Your grade is " + result)
 //     }
-   
+
 // }else if(percentage >= 60 && percentage <=100){
 //      result = "B"
 //     document.write("Your Grade is " + result)
@@ -945,36 +976,36 @@
 
 
 
-    // if (percentage >= 90 && percentage <= 100){
-    //     document.write("Your Grade is A1")
-    // }else if(percentage >= 80 && percentage <= 100){
-    //         document.write("Your Grade is A+")
-    //     }else if(percentage >= 70 && percentage <= 100){
-    //         document.write("Your Grade is A")
-    //     }else if(percentage >= 60 && percentage <= 100){
-    //         document.write("Your Grade is B")
-    //     }else if(percentage >= 50 && percentage <= 100){
-    //         document.write("Your Grade is C")
-    //     }else if(percentage >= 40 && percentage <= 100){
-    //         document.write("Your Grade is D")
-    //     }else if (percentage < 40 && percentage <= 100){
-    //         document.write("You are fail!")
-    //     }else{
-    //         document.write("Please enter valid percentage")
-    //     }
+// if (percentage >= 90 && percentage <= 100){
+//     document.write("Your Grade is A1")
+// }else if(percentage >= 80 && percentage <= 100){
+//         document.write("Your Grade is A+")
+//     }else if(percentage >= 70 && percentage <= 100){
+//         document.write("Your Grade is A")
+//     }else if(percentage >= 60 && percentage <= 100){
+//         document.write("Your Grade is B")
+//     }else if(percentage >= 50 && percentage <= 100){
+//         document.write("Your Grade is C")
+//     }else if(percentage >= 40 && percentage <= 100){
+//         document.write("Your Grade is D")
+//     }else if (percentage < 40 && percentage <= 100){
+//         document.write("You are fail!")
+//     }else{
+//         document.write("Please enter valid percentage")
+//     }
 
 
 
-    // let car = prompt("Enter your transport 1");
-    // let bike = prompt("Enter your transport 2");
+// let car = prompt("Enter your transport 1");
+// let bike = prompt("Enter your transport 2");
 
 // AND
 
-    // if (car === "car" || bike === "bike"){
-    //     console.log("You can go for Picnic");
-    // }else{
-    //     console.log("Sorry! you can't go for Picnic");
-    // }
+// if (car === "car" || bike === "bike"){
+//     console.log("You can go for Picnic");
+// }else{
+//     console.log("Sorry! you can't go for Picnic");
+// }
 
 
 //  let car = "car";
@@ -1062,7 +1093,7 @@
 // let grade;
 
 // if (percentage >= 70 && percentage <= 100){   //this is for A grade listing
-    
+
 //     if (percentage >= 90){
 //         grade = "A+"
 //         document.write("Your grade is: " + grade)
@@ -1073,7 +1104,7 @@
 //         grade = "A"
 //         document.write(grade)
 //     }
- 
+
 // }else if(percentage >= 60 && percentage <= 70){
 //     grade = "B"
 //     document.write(grade)
@@ -1125,32 +1156,32 @@
 
 // A+, A1, A, B, C, D, F
 
-let percentage = prompt("Enter your percentage");
+// let percentage = prompt("Enter your percentage");
 
-let grade;
+// let grade;
 
-if(percentage >= 70 && percentage <=100){
+// if(percentage >= 70 && percentage <=100){
 
-    if(percentage >= 90){
-         grade = "A+"
-        document.write("Your grade is: " + grade)
-    }else if(percentage >= 80){
-        document.write("A1")
-    }else if(percentage >= 70){
-        document.write("A")
-    }
+//     if(percentage >= 90){
+//          grade = "A+"
+//         document.write("Your grade is: " + grade)
+//     }else if(percentage >= 80){
+//         document.write("A1")
+//     }else if(percentage >= 70){
+//         document.write("A")
+//     }
 
-}else if(percentage >= 60 && percentage <=70){
-    document.write("B")
-}else if(percentage >= 50 && percentage <=60){
-    document.write("C")
-}else if (percentage >= 40 && percentage <=50){
-    document.write("D")
-}else if(percentage < 40){
-    document.write("F")
-}else {
-    document.write("Please Enter valid Percentage")
-}
+// }else if(percentage >= 60 && percentage <=70){
+//     document.write("B")
+// }else if(percentage >= 50 && percentage <=60){
+//     document.write("C")
+// }else if (percentage >= 40 && percentage <=50){
+//     document.write("D")
+// }else if(percentage < 40){
+//     document.write("F")
+// }else {
+//     document.write("Please Enter valid Percentage")
+// }
 
 
 
@@ -1163,31 +1194,135 @@ if(percentage >= 70 && percentage <=100){
 // switch(k3,"A","Pass")
 
 
-switch(grade){
+// switch(grade){
+//     case "A+":
+//         document.write(" ------->Pass");
+//         break;
+//     case "A1":
+//         document.write("Monday")
+//         break;
+//     case "A":
+//         document.write("Tuesday")
+//         break;
+//     case "B":
+//         document.write("Wednesday");
+//         break;
+//     case "C":
+//         document.write("Thursday")
+//         break;
+//     case "D":
+//         document.write("Friday")
+//         break;    
+//     case "F":
+//         document.write("Saturday")
+//         break;
+//     default:
+//         document.write("Please enter valid number range from 1 - 7")
+//         break;
+// }
+
+
+
+
+
+// k3 = "A1"
+
+
+
+// switch(k3, "A1", "Pass", "A+", "Pass")
+
+
+// let days = prompt("Enter Days in Number")
+
+// switch (days) {
+//     case "1":
+//         document.write("Sunday");
+//         break;
+//     case "2":
+//         document.write("Monday");
+//     break;
+// case "3":
+//     document.write("Tuesday");
+//     break;
+// case "4":
+//     document.write("Wednesday");
+//     break;
+// case "5":
+//     document.write("Thursday");
+//     break;
+// case "6":
+//     document.write("Friday");
+//     break;
+// case "7":
+//     document.write("Saturday");
+//     break;
+// default:
+//     document.write("Please Enter valid day range form 1 -7")
+//     break;
+
+// }
+
+
+
+
+let percentage = prompt("Enter your percentage");
+
+let grades;
+
+if (percentage >= 70 && percentage <= 100) {
+
+    if (percentage >= 90) {
+        grades = "A+"
+        document.write(grades)
+    } else if (percentage >= 80) {
+        grades = "A1"
+        document.write(grades)
+    } else if (percentage >= 70) {
+        grades = "A"
+        document.write(grades)
+    }
+
+} else if (percentage >= 60 && percentage <= 70) {
+    grades = "B"
+    document.write(grades)
+} else if (percentage >= 50 && percentage <= 60) {
+    grades = "C"
+    document.write(grades)
+} else if (percentage >= 40 && percentage <= 50) {
+    grades = "D"
+    document.write(grades)
+} else if (percentage < 40) {
+    grades = "F"
+    document.write(grades)
+} else {
+    document.write("Please Enter valid Percentage")
+}
+
+
+
+switch (grades) {
     case "A+":
-        document.write(" ------->Pass");
+        document.write(" Pass");
         break;
     case "A1":
-        document.write("Monday")
+        document.write(" Pass");
         break;
     case "A":
-        document.write("Tuesday")
+        document.write(" Pass");
         break;
     case "B":
-        document.write("Wednesday");
+        document.write(" Pass");
         break;
     case "C":
-        document.write("Thursday")
+        document.write(" Pass");
         break;
     case "D":
-        document.write("Friday")
-        break;    
+        document.write(" Pass");
+        break;
     case "F":
-        document.write("Saturday")
+        document.write(" Fail");
         break;
-    default:
-        document.write("Please enter valid number range from 1 - 7")
-        break;
+
 }
 
 
