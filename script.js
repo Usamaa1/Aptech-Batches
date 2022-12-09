@@ -441,6 +441,16 @@
 
 // let arrays;
 
+// let emptyArrays  = [];
+// let emptyArrays  = new Array();
+
+// emptyArrays[1] = "Hello"
+// emptyArrays[3] = 97
+// emptyArrays[5] = "Array"
+// emptyArrays[7] = true
+
+// console.log(emptyArrays)
+
 // let numbers = [1,3,4,6,7,6,3,2,5];
 
 // let arrays = [4, true, "car", 3];
@@ -453,6 +463,161 @@
 
 // console.log(copies1)
 // console.log(copies2)
+
+
+
+// storing values in Array
+
+
+// let personalDatas = [];
+
+// for(i = 0; i < 3; i++){
+//      personalDatas[i] = prompt("Enter data");
+// }
+
+// for(j=0; j<3; j++){
+
+//     console.log(personalDatas[j])
+// }
+
+
+
+
+// **********Multi Dimensional Array*************
+
+// let arrays = [
+//     ["Corolla","red","XLI"],
+//     ["Daihatsu","purple","Mira"],
+//     ["Honda","White","Civic"],
+//     ["Suzuki","Blue","Alto"]
+// ]
+
+// document.write("<table border=1px; cellspacing= '0px'>")
+
+// for(i = 0; i< arrays.length; i++){
+//     document.write("<tr>")
+//     for(j=0; j<arrays.length-1; j++){
+//         document.write("<td>" + arrays[i][j] + "</td>")
+//     }
+//     document.write("<tr>")
+
+// }
+// document.write("</table>")
+
+
+
+
+// let arrays = ["Corolla","red","XLI"];
+// let arrays2 = ["Toyota","4 Wheels","Air Bags"];
+// let numberArrays = [2,4,5,7,8,7,2,5,9,1,9];
+
+
+// document.write(arrays + "<br>");
+
+
+// *****Modify Array*******
+
+// arrays[1] = "purple"
+// document.write(arrays + "<br>");
+
+// *****Delete Array*******
+
+// delete arrays[1]
+// document.write(arrays);
+
+
+// ********Push Array********
+
+// arrays.push("Power Stearing");
+
+// for(i=0; i < arrays.length; i++){
+//     document.write(arrays[i] + "&nbsp | &nbsp")
+// }
+
+
+// ********Pop Array********
+// arrays.pop();
+
+// for(i=0; i < arrays.length; i++){
+//     document.write(arrays[i] + "&nbsp | &nbsp")
+// }
+
+
+// ********Shift Array***********
+
+// arrays.shift()
+
+// document.write(arrays)
+
+
+
+// ********UN Shift Array********
+
+// arrays.unshift("Toyota")
+
+// document.write(arrays)
+
+
+// ********Sort Array********
+
+// arrays.sort();
+
+// document.write(arrays)
+
+
+
+
+// ********Reverse Array********
+
+// arrays.reverse();
+
+// document.write(arrays)
+
+
+
+
+// ********Concat**********
+
+// let carArrays = [];
+
+// carArrays = arrays.concat(arrays2, numberArrays);
+
+// document.write(carArrays)
+
+
+// ********Join**********
+
+
+// let arrays3 = arrays.join(" ")
+
+// document.write(arrays3)
+// console.log(arrays3)
+
+
+
+// ********Slice**********
+
+// let newArrays = arrays.slice(1,3)
+// let newArrays = arrays.slice(1)
+// let newArrays = arrays.slice(-1)
+
+// document.write(newArrays)
+
+
+// ********Splice**********         //Adds items in original Array
+
+// arrays.splice(2,0,"Toyota","Power Stearing")
+// arrays.splice(2,1,"Toyota","Power Stearing")
+
+// document.write(arrays)
+
+
+
+
+
+
+
+
 
 
 
@@ -500,6 +665,10 @@
 // })
 
 
+
+
+
+
 // **************Nested For Loop******************
 
 // for(let i = 0; i<5; i++){
@@ -531,10 +700,31 @@
 //     document.write("<br>")
 // }
 
+// ***********EXAMPLE 3*****************
 
+// for(let i =0; i <=10; i++){
+//     for(let space=1;space<=30-i;space++){
 
+//         document.write("&nbsp &nbsp")
+//     }
+//     for(let j=0; j <=i; j++){
 
+//         document.write("*&nbsp &nbsp")
+//     }
+//     document.write("<br>")
+// }
 
+// for(let i =10; i >=0; i--){
+//     for(let space=1;space<=30-i;space++){
+
+//         document.write("&nbsp &nbsp")
+//     }
+//     for(let j=0; j <=i; j++){
+
+//         document.write("*&nbsp &nbsp")
+//     }
+//     document.write("<br>")
+// }
 
 // *************WHILE LOOP***************
 
@@ -1265,65 +1455,202 @@
 
 
 
-let percentage = prompt("Enter your percentage");
+// let percentage = prompt("Enter your percentage");
 
-let grades;
+// let grades;
 
-if (percentage >= 70 && percentage <= 100) {
+// if (percentage >= 70 && percentage <= 100) {
 
-    if (percentage >= 90) {
-        grades = "A+"
-        document.write(grades)
-    } else if (percentage >= 80) {
-        grades = "A1"
-        document.write(grades)
-    } else if (percentage >= 70) {
-        grades = "A"
-        document.write(grades)
-    }
+//     if (percentage >= 90) {
+//         grades = "A+"
+//         document.write(grades)
+//     } else if (percentage >= 80) {
+//         grades = "A1"
+//         document.write(grades)
+//     } else if (percentage >= 70) {
+//         grades = "A"
+//         document.write(grades)
+//     }
 
-} else if (percentage >= 60 && percentage <= 70) {
-    grades = "B"
-    document.write(grades)
-} else if (percentage >= 50 && percentage <= 60) {
-    grades = "C"
-    document.write(grades)
-} else if (percentage >= 40 && percentage <= 50) {
-    grades = "D"
-    document.write(grades)
-} else if (percentage < 40) {
-    grades = "F"
-    document.write(grades)
-} else {
-    document.write("Please Enter valid Percentage")
-}
+// } else if (percentage >= 60 && percentage <= 70) {
+//     grades = "B"
+//     document.write(grades)
+// } else if (percentage >= 50 && percentage <= 60) {
+//     grades = "C"
+//     document.write(grades)
+// } else if (percentage >= 40 && percentage <= 50) {
+//     grades = "D"
+//     document.write(grades)
+// } else if (percentage < 40) {
+//     grades = "F"
+//     document.write(grades)
+// } else {
+//     document.write("Please Enter valid Percentage")
+// }
 
 
 
-switch (grades) {
-    case "A+":
-        document.write(" Pass");
-        break;
-    case "A1":
-        document.write(" Pass");
-        break;
-    case "A":
-        document.write(" Pass");
-        break;
-    case "B":
-        document.write(" Pass");
-        break;
-    case "C":
-        document.write(" Pass");
-        break;
-    case "D":
-        document.write(" Pass");
-        break;
-    case "F":
-        document.write(" Fail");
-        break;
+// switch (grades) {
+//     case "A+":
+//         document.write(" Pass");
+//         break;
+//     case "A1":
+//         document.write(" Pass");
+//         break;
+//     case "A":
+//         document.write(" Pass");
+//         break;
+//     case "B":
+//         document.write(" Pass");
+//         break;
+//     case "C":
+//         document.write(" Pass");
+//         break;
+//     case "D":
+//         document.write(" Pass");
+//         break;
+//     case "F":
+//         document.write(" Fail");
+//         break;
 
-}
+// }
+
+
+// nested for loop
+
+// for (i = 0; i<=5; i++){
+//     for(j=0; j<=i; j++){
+//         document.write(" " + i)
+//     }
+//     document.write("<br>")
+// }
+
+
+
+
+
+// let userName = prompt("Enter your User Name")
+// let password = prompt("Enter your Password")
+// let pincode = prompt("Enter your Pin code")
+
+
+
+// if (userName === "admin" && (password === "123" || pincode === "987")){
+//     console.log("You have succesfully logged In")
+// }else{
+//     console.log("Kindly Enter correct username or password")
+// }
+
+
+
+
+
+
+
+// let userName = prompt("Enter your User Name or phone")
+// let password = prompt("Enter your Password")
+// let email = "usama@gmail.com"
+// let pin = prompt("Enter your Pin Code")
+
+
+// if(userName === "admin" && (password === "123" || pin === "453")){
+//     document.write("You have successfully logged in")
+// }else{
+//     document.write("Enter correct user name or password or pin  code")
+// }
+
+
+//  userName === "admin" && password ==="123" ||  pin === "453" ? document.write("You have succesfully logged in") : document.write("Enter correct user name or password")
+
+
+
+// if(userName === "admin" || userName === email){
+//     if(password === "123"){
+//         document.write("You have succefully logged in")
+//     }
+// }else{
+//     document.write("Enter correct user name or password or pin  code")
+    
+// }
+
+
+
+
+// while
+
+
+// document.write("Hello world")
+
+
+// let i = 20;
+
+// while(i >=  1){
+
+//     // if(i % 2 === 1){
+
+//     //     document.write(i);
+//     // }
+
+//     document.write(-i)
+
+//     document.write("<br>")
+//     --i;
+// }
+
+// let j = 0
+
+// while(j <=  20){
+
+//     // if(i % 2 === 1){
+
+//     //     document.write(i);
+//     // }
+
+//     document.write(j)
+
+//     document.write("<br>")
+//     j++;
+// }
+
+
+
+// let i = 20;
+
+
+// do{
+
+//     document.write(i + "<br>")
+//     i--; 
+// }
+// while(i >=  1)
+
+
+
+
+// <=, >=, ===, ==, !=, 
+
+
+
+// let age = prompt("Enter your age")
+
+
+// age <= 18 ? document.write("You are not able to sign In") : document.write("You are able to sign In")
+
+
+// let a = 10
+
+// if (!true){
+//     document.write("hello")
+// }else{
+//     document.write("bye")
+// }
+
+
+
+
+// for(let i = 0; i <= 10;  i++){
+//     console.log(i)
+// }
 
 
 
