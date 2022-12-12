@@ -612,6 +612,33 @@
 // document.write(arrays)
 
 
+// ********isArray**********  //used for identifing array
+
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+// let car = "Mehran"
+
+// console.log(Array.isArray(car))
+
+
+
+// **********indexOf************
+
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+// let car = cars.indexOf("Mira",4)
+
+// document.write(car)
+
+
+
+// **********lastIndexOf************
+
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+// let car = cars.lastIndexOf("Vitz",4)
+
+// document.write(car)
 
 
 
@@ -1570,7 +1597,7 @@
 //     }
 // }else{
 //     document.write("Enter correct user name or password or pin  code")
-    
+
 // }
 
 
@@ -1653,4 +1680,119 @@
 // }
 
 
+// let userName = prompt("Enter your User Name")
+// let password = prompt("Enter your Password")
+
+// let phone = "89898787878"
+// let pincode = prompt("Enter your Pin Code")
+
+
+
+
+
+// if (userName === "admin" && (password === "321" || pincode === "567")){
+//     document.write("Login Succesfull")
+// }else  if() {
+//     document.write("Kindly Enter valid username and password or pincode")
+
+// }
+
+// if ((userName === "admin" || userName === "090839789238" ) && password === "567"){
+//     document.write("Login Succesfull")
+// }else{
+//     document.write("Kindly Enter valid username and password or pincode")
+
+// }
+
+
+
+
+// let age = prompt("Enter your age")
+
+
+// ternary operator
+
+// userName === "admin" && password === "321" ? document.write("Succesful login") : document.write("Kindly Enter correct username and password")
+
+
+// ***************Loops***************
+
+// let i = 0;
+
+// while(true){
+//     if(i % 2 === 1){
+
+//         document.write(+ i + "<br>")
+//     }
+//     i++
+// }
+
+
+
+// do{
+//     document.write("hello world <br> <br>")
+//     i++
+// }while(i = 10)
+
+
+
+
+// let table = prompt("Enter number");
+
+
+// for (i =1 ; i <= 10 ; i++){
+
+// document.write(`${table} x ${i} = ${table * i} <br>`)
+
+// }
+
+
+
+// i =0
+// j = 0
+
+
+
+
+
+// for (i= 1; i < 5 ;i++){
+//     console.log("outer loop:" + i + "<br>")
+//     for(j=0; j < 5; j++){
+//         // console.log("inner loop:" + j + "<br>")
+//         console.log("inner loop:" + j)
+
+//     }
+// }
+
+
+
+
+// for(let i = 1; i<=100; i+=10){
+//     for(let j=i; j < i+10; j++){
+//         document.write(" innerloop: " + j)
+//     }
+//     document.write(" outerloop: " + "<br>")
+// }
+
+
+// i++
+// i= i+1
+
+// i = i + 10
+
+// for (i = 1; i <= 100; i+=10){
+    
+//     // document.write(`${i+1} <br>`)
+//     for(j = i; j <= i+10; j++){
+//         document.write(`${j} &nbsp &nbsp `)
+//     }
+//     document.write(`<br>`)
+// }
+
+
+
+
+// for(i= 0; i<= 10; i++){
+//     document.write(`<img src= "istockphoto-1315205465-170667a.jpg">`)
+// }
 
