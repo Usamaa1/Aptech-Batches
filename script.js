@@ -1,3 +1,6 @@
+// 'use strict'
+
+
 // ************JavaScript Basics******************
 
 // alert("this is message alert");
@@ -622,17 +625,17 @@
 
 
 
-// **********indexOf************
+// **********indexOf************    // find the value through index from start
 
 // let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
 
-// let car = cars.indexOf("Mira",4)
+// let car = cars.indexOf("Mira",1)
 
 // document.write(car)
 
 
 
-// **********lastIndexOf************
+// **********lastIndexOf************     // find the value through index from last
 
 // let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
 
@@ -643,7 +646,96 @@
 
 
 
+// **********includes()************     // find if value present in the array or not
 
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+// let car = cars.includes("Vitz")
+// document.write(car)
+
+
+// **********some()************          //find 1st value via conditions and return values in true or false
+// let ages = [2,4,6,7,45,23,4,18,56,8,6,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.some(myfunction)
+
+// document.write(b)
+
+
+// **********every()************        //find all values via conditions and return values in true or false
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age <= 18;
+
+// b = ages.every(myfunction)
+
+// document.write(b)
+
+
+
+// **********find()************     //find first value via conditions and return actual values
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.find(myfunction)
+
+// document.write(b)
+
+
+
+
+// **********findIndex()************    //find first values via conditions and return index
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.findIndex(myfunction)
+
+// document.write(b)
+
+
+
+// **********filter()************    //find all values based on coditions and place on new array
+
+// let ages = [43,18,2,6,83,3,6,9,6,342,4,7,83,7,34,334,23]
+
+// let myfunction = age => age >= 18;
+
+// let b = ages.filter(myfunction);
+
+// document.write(b)
+
+
+// **********toString()************     // Converts array into string
+
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+// // console.log(cars)
+
+
+// console.log(cars.toString())
+
+
+
+// ***********valueOf()*************
+
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+
+// document.write(cars.valueOf())
+
+
+// ***********fill()*************
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+
+// document.write(cars.fill("Hello"))
 
 
 
@@ -685,11 +777,40 @@
 // }
 
 
+// ***********MAP*************
+
+
+
 // temps.map((eachItem, i)=>{
-// console.log(i, eachItem);
-// temps[i] = "cat"
+// // console.log(i, eachItem);
+// // temps[i] = "cat"
+
+// if(i <2 ){
+//     break;
+// }
+
+
 // console.log(temps[i])
 // })
+
+
+// for(i=0; i< temps.length; i++){
+
+// if(i >2 ){
+//     break;
+// }
+
+
+//     console.log(temps[i])
+// }
+
+
+
+// **********ForEach*************
+
+// temps.forEach(element => {
+//     document.write(`${element} <br>`)
+// });
 
 
 
@@ -779,13 +900,6 @@
 
 
 
-
-
-
-
-
-
-
 // ******************Function*********************
 
 // ES5 Functions
@@ -816,6 +930,46 @@
 // let cube = num => num**3;
 
 // console.log(cube(4))
+
+
+
+
+// ******************Objects*********************
+
+// let productDetails = {
+//     productName: "Headphones",
+//     productPrice: 1200,
+//     productColor: "Blue",
+//     productGST: 10,
+//     productSize: ["12 inch.", "16 inch.", "18 inch.", "22 inch."],
+//     productTotalPrice: (a, b) => a + b
+
+// }
+
+// let anotherProduct = new Object();
+
+// anotherProduct.ProductName = "Keyboard"
+// anotherProduct.ProductColor = "Black"
+// anotherProduct.Price = 4500
+
+
+// document.write(anotherProduct.ProductName)
+
+
+
+
+
+// document.write(productDetails.productName)
+// document.write(productDetails['productName'])
+// document.write(productDetails.productSize)
+// document.write(productDetails.productTotalPrice(productDetails.productGST,productDetails.productPrice))
+// document.write(productDetails.productTotalPrice2())
+
+
+
+
+
+
 
 
 
@@ -1692,7 +1846,7 @@
 
 // if (userName === "admin" && (password === "321" || pincode === "567")){
 //     document.write("Login Succesfull")
-// }else  if() {
+// }else {
 //     document.write("Kindly Enter valid username and password or pincode")
 
 // }
@@ -1795,4 +1949,236 @@
 // for(i= 0; i<= 10; i++){
 //     document.write(`<img src= "istockphoto-1315205465-170667a.jpg">`)
 // }
+
+
+
+
+
+// let i = 0;
+
+
+
+// while(i < 20){
+//     // document.write("<h2 class = 'txt'> hello </h2>")
+//     // if(i % 2 === 0){
+//     document.write(`${i} <br>`)
+//     // }
+//     i++ //9 + 1= 10
+// }
+
+
+
+// do {
+//     document.write("hello <br>");
+//     i++
+// }
+// while(i > 10)
+
+
+// let table = prompt("Enter number")
+
+// document.write(`${table} x ${i} = ${i*table} <br>`)
+
+// for(i = 0; i <= 5; i++){
+
+//     document.write("outer loop:" + i + "<br>")
+
+//     for(j = 0; j <= 5; j++){
+//         document.write("inner loop:" + j + "<br>")
+//     }
+
+// }
+
+
+// i++
+// i = i + 10 
+
+
+
+
+// for(i = 1; i<=100; i+=10){
+
+//     for(j = i; j< i+10; j++){
+//         document.write(`&nbsp ${j}`)
+//     }
+//     // document.write(`outer loop: ${i} <br>`)
+//     document.write(`<br>`)
+// }
+
+
+
+// for(let i = 1; i<=100; i+=10){
+//     for(let j=i; j < i+10; j++){
+//         document.write("&nbsp" + j)
+//     }
+//     document.write("<br>")
+// }
+
+
+
+// for(i = 0; i<100; i+=10){
+//     for(j = i; j < i+10; j++){
+//         document.write(j + "&nbsp")
+//     }
+//     document.write( "<br>")
+
+// }
+
+// for(i=0; i<=5; i++){
+//     for(j = i; j<=5; j++){
+//         document.write(i)
+//     }
+//     document.write("<br>")
+// }
+
+// let i =0;
+// while(i < 10){
+//     console.log(i);
+//     i++
+// }
+
+// for(i = 0; i< 2; i++){
+//     document.write(`outer: ${i+1}  <br>`)
+//     for(j= 0; j <10; j++){
+//         document.write(`inner: ${j+1}  <br>`)
+
+//     }
+
+// }
+
+
+
+// for(i = 0; i < 10; i++){
+//     for(j =0; j< 10; j++){
+//         document.write(`${i} <br>`)
+//     }
+
+// }
+
+
+
+// for(i =1; i <= 100; i+=10){
+//     for(j=i; j < i+10; j++){
+//         document.write(`${j} &nbsp`)
+//     }
+//     document.write(` &nbsp <br>` )
+ 
+
+// }
+
+
+
+
+
+
+// let i = 1
+// while (){
+// document.write(`${i} heloo <br>`);
+// i++
+// }
+
+
+// i = i+ 10 // 1 = 1+ 10 // 11
+
+// for(i= 1; i<= 100; i+=10){
+
+//     for(j = 11; 11 < i+ 10; j++){
+//         document.write(`${j} &nbsp`)
+//     }
+//     document.write(`<br>`)
+    
+// }
+
+// let i = 0;
+
+// for(let i = 1; i <= 5; i++){
+//     for(j=1; j<=i; j++){
+//         document.write(i)
+//     }
+//     ++i
+// document.write(" <br>")
+// }
+
+
+
+
+
+// for (i =1; i <= 100; i+=10){
+//     for(j=i; j < i+ 10; j++){
+//         document.write(`${j} &nbsp`)
+//     }
+//     document.write(`<br>`)
+// }
+
+
+
+
+// for(i=5; i>=1; i--){
+//     for(j=1; j<=i; j++){
+//         document.write(i)
+//     }
+//     document.write(`<br>`)
+// }
+
+
+
+
+// for(i=1; i<=10; i++){
+//     if (i <= 3){
+//         document.write("Hello <br>")
+//         continue;
+//     }
+    
+//     document.write(`${i} <br>`)
+// }
+
+
+
+// for(i=1; i <100; i+=10){
+//     for (j=i; j<i+ 10; j++){
+//         document.write(`${j}  &nbsp`)
+        
+//     }
+//     document.write(`<br>`)
+// }
+
+
+// for (i=5; i >= 0; i--){
+//     for(j=0; j<=i; j++){
+//         document.write(i)
+//     }
+//     document.write("<br>")
+// }
+
+
+
+
+// for(i=0; i<=7; i++){
+//     if(i <= 3){
+//         console.log("Hello");
+//         break
+//     }
+//     console.log(i)
+// }
+
+
+
+
+// let b = ["Keyboard","dummy text description",3200, true,false, "GST 10%"];
+
+
+// console.log(b[2], b[4])
+// document.write(b[2], b[4])
+
+
+
+
+// let products = []
+
+// for(i=0; i<3; i++){
+//     products[i] = prompt("Enter : ")
+// }
+
+// console.log(products)
+
 
