@@ -22,6 +22,7 @@
 // For Loop Methods (map, forEach, forIn)
 // Functions
 // Objects
+// Math Methods ----(round, ciel, floor, trunc, random)
 
 
 
@@ -36,7 +37,6 @@
 // return Values
 // if statements & Switch Statements
 // For Loop, While Loop, Do While Loop
-// For Loop Methods (map,For each, For in)
 // falsy and truthy values
 // logical operators (AND, NOT, OR)
 // conditional Statements---- If & Switch
@@ -56,7 +56,15 @@
 // Math Expressions ---BODMAS---Operators Precedence---
 // return Values
 // if statements & Switch Statements
-// While Loop, Do While Loop
+// For Loop, While Loop, Do While Loop
+// falsy and truthy values
+// logical operators (AND, NOT, OR)
+// conditional Statements---- If & Switch
+// Boolean Values
+// ternary operators
+// nested if (Login - Example)
+// loops --- while, do while, for loop
+// Nested for loops
 
 
 
@@ -86,7 +94,6 @@
 // Math Expressions ---BODMAS---Operators Precedence---
 // return Values
 // For Loop, While Loop, Do While Loop
-// For Loop Methods (map,For each, For in)
 // falsy and truthy values
 // logical operators (AND, NOT, OR)
 // conditional Statements---- If & Switch

@@ -1,4 +1,3 @@
-// 'use strict'
 
 
 // ************JavaScript Basics******************
@@ -964,6 +963,46 @@
 // document.write(productDetails.productSize)
 // document.write(productDetails.productTotalPrice(productDetails.productGST,productDetails.productPrice))
 // document.write(productDetails.productTotalPrice2())
+
+
+// ***********Const in Objects************
+
+// const products = {
+//     productName: "HeadPhone",
+//     productPrice: 9000,
+//     productColor: "black"
+// }
+
+
+// console.log(products)
+
+
+// products.productName = "Keyboard"
+
+// console.log(products)
+
+
+
+// products = {
+//     productName: "Airpod",
+//     productPrice: 4500,
+//     productColor: "White"
+// }
+
+// console.log(products)
+
+
+// ***********For in loop in Objects************
+
+// let products = {
+//     productName: "HeadPhone",
+//     productPrice: 9000,
+//     productColor: "black"
+// }
+
+// for (let key in products) {
+//     document.write(`${key} : ${products[key]} <br>`)
+// }
 
 
 
@@ -2134,8 +2173,8 @@
 
 
 
-// for(i=1; i <100; i+=10){
-//     for (j=i; j<i+ 10; j++){
+// for(i=100; i > 1; i-=10){
+//     for (j=i; j >i-10; j--){
 //         document.write(`${j}  &nbsp`)
         
 //     }
@@ -2181,4 +2220,138 @@
 
 // console.log(products)
 
+
+// for(i=0; i<5; i++){
+//     for (j=0; j<i; j++){
+//         document.write(i)
+//     }
+//     document.write("<br>")
+// }
+
+
+// let products = ["Keyboard", 2300, "description", false, true]
+
+// let copyProducts =products; //clone
+
+
+// document.write( "Product : " + products + "<br>")
+// document.write("Copy Product : " + copyProducts + "<br>")
+// console.log(copyProducts)
+
+
+
+// copyProducts[2] = "kdfjkfjd" 
+
+
+// document.write(products[4])
+
+
+// document.write( "Product : " + products + "<br>")
+// document.write("Copy Product : " + copyProducts + "<br>")
+// console.log(copyProducts + "<br>")
+
+
+
+// let a = 89;
+
+// let b;
+
+// b = a;
+
+// console.log("B value : " + b)
+// console.log("A value : " + a)
+
+// b = 78;
+
+// a = 76
+
+// console.log("B value : " + b)
+// console.log("A value : " + a)
+
+
+// let images = []
+
+// let images = ["https://picsum.photos/200/300","https://picsum.photos/200", "https://picsum.photos/200/300?grayscale", "https://picsum.photos/seed/picsum/200/300","https://picsum.photos/200/300?grayscale"]
+
+// let inputImage = []
+
+
+
+// for (j=0; j<3; j++){
+// inputImage[j] = prompt("Enter numbers");
+
+// for(a=j; a<j; a++){
+//     inputImage[j] = images[a];
+// }
+
+// }
+
+
+
+
+
+// for(i=0; i<3; i++){
+//     // document.write(`<img src= "${images[i]}">`)
+//     document.write(`${images[i]}`)
+// }
+
+
+
+
+// let numbers = []
+
+// let userInput = [];
+
+
+// for(i=0; i<=3; i++){
+//     userInput[i] = prompt("Enter numbers")
+// }
+
+
+// for(j=0; j<=3; j++){
+//     document.write(`<img src="${userInput[j]}" >`)
+// }
+
+
+
+// let abc = ["Headphone",5400,"Turtle Beach Stealth 600 Gen 2 USB Wireless Amplified Gaming Headset - Licensed for Xbox", true, false, undefined, NaN, 56.34];
+
+
+
+// let abc = [];
+
+// abc[0] = "Headphone"
+// abc[2] = 787
+// abc[4] = true
+// abc[6] = NaN
+
+
+// document.write(abc)
+// console.log(abc)
+
+
+// let userInput = [];
+
+
+
+// for(i=0; i<3; i++){
+//     userInput[i] = prompt("Enter Image URL:" + i)
+
+// }
+
+// for(j=0; j<3; j++){
+//     document.write(`<img src='${userInput[i]}' width = '200px'>`)
+// }
+
+
+
+// let userInput = [];
+
+
+
+// for(i=0; i<3; i++){
+//     userInput[i] = prompt("Enter Image URL:" + i)
+//     document.write(`<img src="${userInput[i]}" width='200px'>`)
+
+// }
 
