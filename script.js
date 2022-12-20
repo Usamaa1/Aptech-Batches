@@ -837,6 +837,14 @@
 //     document.write(" outerloop: " + "<br>")
 // }
 
+for(let i = 1; i<=100; i++){
+    for(let j=i; j < i+10; j+=10){
+        document.write(`<span>${i}</span>  <span>${i+10}</span>`)
+    }
+    document.write("<br>")
+}
+
+
 // ***********EXAMPLE 2*****************
 
 
