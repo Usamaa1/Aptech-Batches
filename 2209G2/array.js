@@ -582,7 +582,6 @@
 
 // console.log(cars)
 
-// console.log(cars.lastIndexOf("Vitz",4))
 // let car = cars.lastIndexOf("Vitz",2)
 
 // console.log(car)
@@ -599,15 +598,341 @@
 // console.log(cars.includes("suzuki"))
 
 
-// **********toString()************     // Converts array into string
 
-// let cars = [8,56,56,67,767,67,7,45,34,234,5434,34];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let userImages= []
+
+
+// for(i=0; i<3; i++){
+//     userImages[i] = prompt("Enter image URL: " + i);
+
+//     document.write(`<img src="${userImages[i]}" width = "200px">`)
+// }
+
+
+
+
+
+
+// **********Section 2209G2 ***************
+
+
+// image input from user by using array
+
+// let userImages = [];
+
+
+
+// for(j=0 ; j<3; j++){
+//     userImages[j] = prompt("Enter Images URL:" + j)
+//     for(i=0; i<1; i++){
+
+//         document.write(`<img src="${userImages[j]}" width = "200px">`)
+//     }
+
+// }
+
+
+
+// Arrays Methods
+
+
+// Modify
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// numbers[2] = "hello"
+
+// console.log("After : " + numbers)
+
+
+
+// Delete
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// delete numbers[2]
+
+// // delete numbers[2]
+// console.log("After : " + numbers)
+
+
+
+// push
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+
+// // numbers.push("how")
+
+// console.log("After : " + numbers)
+
+
+
+// pop
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// numbers.pop("jkjkj")
+// // numbers.pop()
+
+// console.log("After : " + numbers)
+
+
+// shift
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log(numbers)
+
+
+
+// // numbers.shift()
+
+// console.log(numbers)
+
+
+// Unshift
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+
+// numbers.unshift(990)
+
+// // numbers.unshift("hi")
+
+// console.log("After : " + numbers)
+
+
+
+// sort
+
+// let numbers = [34,43,5,43,5,2,67,1]
+// // let numbers = ["Farhan", "Zahid", "Kamran", "Imran", "Aslam","Saad", "Babar"]
+
+// console.log("Before : " + numbers)
+
+// numbers.sort()
+
+// // numbers.sort()
+
+// console.log("After : " + numbers)
+
+
+
+
+// reverse
+
+// let numbers = [34,43,5,43,5,67]
+// let numbers = ["Farhan", "Zahid", "Kamran", "Imran", "Aslam","Saad", "Babar"]
+
+
+// console.log("Before : " + numbers)
+
+// numbers.sort((a,b)=>{return b - a})
+// // numbers.reverse()
+
+// console.log("After : " + numbers)
+
+
+
+// slice
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// // let abc = numbers.slice(0,4)
+
+//     let  abc = numbers.slice(2,3)
+
+// console.log("After : " + numbers)
+// console.log("ABC : " + abc)
+// console.log("ABC : " + abc2)
+
+
+// spread operator
+
+// let a = 32
+// let b;
+
+// let a = [5,7,3,2,7,72,23,1];
+
+// let b = [];
+
+// b = [...a] //clone
+
+// console.log("a : "  + a)
+// console.log("b : " + b)
+
+
+// b[2] = "Hello"
+// // b = "Hello"
+
+// console.log("a : "  + a)
+// console.log("b : " + b)
+
+
+
+
+// Example of coping variable
+
+// let a = 23;
+
+// let b;
+
+// b = a
+
+// console.log("a : "  + a)
+// console.log("b : " + b)
+
+
+// b = "Hello"
+
+// console.log("a : "  + a)
+// console.log("b : " + b)
+
+
+
+// splice
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// // numbers.splice(2,3)
+// numbers.splice(2,2)
+
+
+
+// console.log("After : " + numbers)
+// // console.log("ABC : " + abc)
+
+
+// isArray
+
+// let numbers = [34,43,5,43,5,67]
+// let numbers = 32
+
+// console.log("Before : " + numbers)
+
+// // let abc = 
+
+
+
+// // console.log("After : " + numbers)
+// console.log("ABC : " + Array.isArray(numbers))
+
+// indexOf
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// // let abc = 
+
+
+// console.log("After : " + numbers.indexOf(43,2))
+
+
+// lastIndexOf
+
+// let numbers = [34,43,5,43,5,67]
+
+// console.log("Before : " + numbers)
+
+// // let abc = 
+
+
+// console.log("After : " + numbers.lastIndexOf(5,4))
+
+
+// ********Concat**********
+
+// let carArrays = [];
+// console.log("Before : " + carArrays)
+
+// let carArrays2 = ["Honda", "Toyota", "Daihatsu"]
+// let carArrays3 = ["Huyndai", "Mercedes", "Ferari"]
+// let carArrays4 = ["Mira", "Prius", "Mehran"]
+
+// carArrays = carArrays2.concat(carArrays3, carArrays4, )
+
+// console.log(carArrays)
+
+// carArrays = carArrays2.concat(carArrays3,carArrays4)
+
+// carArrays = arrays.concat(arrays2, numberArrays);
+
+// console.log("After : " + carArrays)
+// console.log("ABC : " + abc)
+
+
+
+// ********Join**********
+
+// let a  = carArrays.join("-")
+
+// console.log(a)
+
+// let arrays3 = arrays.join(" ")
+
+// let arrays3 = carArrays2.join(" ")
+
+// document.write(arrays3)
+// console.log(arrays3)
+
+
+// **********includes()************     // find if value present in the array or not
+
+
 // let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+
+// console.log(cars.includes("Prius"))
 
 // console.log(cars)
 
+// let car = cars.includes("Vitz")
+
+// console.log(cars.includes("suzuki"))
+
+
+// **********toString()************     // Converts array into string
+
+// let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
+// let cars = [4,7,56,457,7,667,5,56,56,3,675,56,];
 
 // console.log(cars.toString())
+// console.log(23)
 
 // // console.log(cars)
 
@@ -624,45 +949,54 @@
 
 // document.write(cars.valueOf())
 
-
 // ***********fill()*************
 // let cars = ["Civic","Mira","Prius","Vitz","Bolan"];
 
-// console.log(cars.fill("cars"))
 
+// console.log(cars.fill("Hello"))
 
 
 // document.write(cars.fill("Hello"))
 
 
+// ***********Multidimensional Array*************
 
-// ************Multidimensional Arrays************
+let products = [["https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg","Keyboard", "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade", 4500, 3.7],
+["https://m.media-amazon.com/images/I/811-0kItnvL._AC_UY218_.jpg","Wireless Keyboard", "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade Anti-Ghosting", 2300, 4.5],
+["https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_UY218_.jpg","Lazer Keyboard", "Razer Ornata Chroma Gaming Keyboard: Hybrid Mechanical Key Switches - Customizable Chroma RGB Lighting - Individually Backlit Keys - Detachable Plush Wrist Rest - Programmable", 3440, 3.8],
+["https://m.media-amazon.com/images/I/71qWTIo8XSL._AC_UY218_.jpg","Dell Keyboard", "KLIM Chroma Wireless Gaming Keyboard RGB New 2022 Version - Long-Lasting Rechargeable Battery - Quick and Quiet Typing - Water Resistant Backlit Wireless Keyboard for PC PS5 PS4", 678000, 4.3]
+]
 
-// let b = [[500, 4.5],
-//         [600, 3.7],
-//         [800, 3.2],
-//         [900, 3.5],
-//         [200, 5]]
 
-// let products = [["https://m.media-amazon.com/images/I/71Xcl-j5ipL._AC_UY218_.jpg", "Audionic HeadPhone", "SteelSeries Arctis 3 Console - Stereo Wired Gaming Headset for PlayStation 5 / 4, Xbox Series X|S, Nintendo", 5600, 1.5],
-// ["https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UY218_.jpg", "Sony HeadPhone", "BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling", 4500, 3.5],
-// ["https://m.media-amazon.com/images/I/71Xcl-j5ipL._AC_UY218_.jpg", "Samsung HeadPhone", "Razer Kraken Gaming Headset: Lightweight Aluminum Frame, Retractable Noise Isolating", 6700, 4.5],
-// ["https://m.media-amazon.com/images/I/71BKQhFzDmL._AC_UY218_.jpg", "Apple HeadPhone", "HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads, Durable", 3200, 2.5],
-// ["https://m.media-amazon.com/images/I/71waplSVO7L._AC_UY218_.jpg", "Razor HeadPhone", "Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound - 50mm Drivers - Memory Foam", 900, 4.1]
+
+ for(i=0; i< products.length; i++){
+
+
+    document.write(`<img src= '${products[i][0]}'> <h1>${products[i][1]}</h1> <h3>${products[i][2]}</h3> <p>Rs : ${products[i][3]}</p> <p>Rating : ${products[i][4]}</p>`)
+
+ }
+
+
+
+// document.write(`<img src= '${products[i][j]}'> <h1>${products[i][j]}</h1> <h3>${products[i][j]}</h3> <p>Rs : ${products[i][j]}</p> <p>Rating : ${products[i][j]}</p>`)
+
+
+// document.write(`<img src= '${products[0][0]}'> <h1>${products[0][1]}</h1> <h3>${products[0][2]}</h3> <p>Rs : ${products[0][3]}</p> <p>Rating : ${products[0][4]}</p>`)
+
+
+
+
+// let numbers = [
+//     [1,2,4,6,7],
+//     [3,5,7,89,6],
+//     [7,87,3,23]
 // ]
 
 
-
-//     document.write(`<img src='${products[0][0]}'> <h1>${products[0][1]}</h1> <h3>${products[0][2]}</h3> <div>Rs : ${products[0][3]}<div> <div>${products[0][4]}</div>`)
-
-
-// for(i=0; i < b.length; i++){
-
-//     document.write(b[i][0] + "<br>")
-//     console.log(b[i])
-
-// }
-
-// for(i=0; i < 10; i++){
+// for(i=0; i< numbers.length; i++){
+//     for(j=0; j<numbers[i].length; j++){
+//         document.write(`${numbers[i][j]}`)
+//     }
+//     document.write("<br>")
 
 // }

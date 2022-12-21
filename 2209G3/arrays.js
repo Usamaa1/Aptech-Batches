@@ -629,11 +629,17 @@
 
 // let productItems = [["https://i.picsum.photos/id/76/200/300.jpg?hmac=SWpe2KMM2qFiQ8C8WHIZilaJb7KVkgOVVJPTbasGyUU","CC364A - 64A", "Product details of CC364A - 64A | Black iAicon | Compatible Toner Cartridge For Laser Jet Enterprise M4555H MFP | M4555T MFP | Las", 45000, 4.5], ["https://picsum.photos/seed/picsum/200/300","Imaging Plus", "Printing Made EasyFor Models 1005, 1006, 1010, 1012, 1020, 1100, 1200, 1300, 1320, 2015, 2035, 2055, 2400, 2420, 3005, 4200, 4250, 900, 9050Refill Your Laser Printer Toner In homeHp Imaging Plus Powder for all tonersBlack powder250gRefill 3-4 timesEasy RefillingLow cost Refilling", 76900, 3.7]]
 
-// console.log(arrays)
+// console.log(productItems.length)
 
 
-// document.write(`<img src ='${productItems[0][0]}' > ${productItems[0][1]} ${productItems[0][2]} ${productItems[0][3]} ${productItems[0][4]}`)
-// document.write(`<img src ='${productItems[1][0]}' > ${productItems[1][1]} ${productItems[1][2]} ${productItems[1][3]} ${productItems[1][4]}`)
+// for(i=0; i < productItems.length; i++){
+//     document.write(`<img src=${productItems[0][0]}> <h1>${productItems[0][1]}</h1> <h3>${productItems[0][2]}</h3>
+//     <p>Rs : ${productItems[0][3]}</p> <p>Rating : ${productItems[0][4]}</p>`)
+// }
+
+
+
+
 
 
 
