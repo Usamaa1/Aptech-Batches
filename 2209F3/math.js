@@ -2,9 +2,16 @@
 
 // let a = 10;
 
-// let b = Number.isFinite(a)
+// let userData = 10**1000
+
+
+
+
 
 // let b = Number.isFinite(a)
+
+// console.log(Number.isFinite(userData))
+// console.log(userData)
 
 // console.log(a)
 // console.log(b)
@@ -29,7 +36,7 @@
 // console.log(b)
 
 
-// ************ toPrecision() ************
+// ************ isPrecision() ************
 
 // let a = 3.45690909;
 

@@ -15,6 +15,8 @@
 
 // let b = Number.isInteger(a)
 
+// let b = Number.isInteger(a)
+
 // console.log(a)
 // console.log(b)
 
@@ -23,6 +25,7 @@
 
 // let a = 3.45690909888998778999888899998788999876543334566654456776567;
 
+// let b = a.toFixed(1)
 // let b = a.toFixed(2)
 
 // console.log(a)
@@ -33,7 +36,7 @@
 
 // let a = 3.45690909;
 
-// let b = a.toPrecision(3)
+// let b = a.toPrecision(5)
 
 // console.log(a)
 // console.log(b)
@@ -41,8 +44,9 @@
 
 // ************ ciel() ************
 
-// let a = 3.45690909;
+// let a = 3.65690909;
 
+// let b = Math.floor(a)
 // let b = Math.ceil(a)
 
 // console.log(a)
@@ -61,13 +65,13 @@
 
 // ************ round() ************
 
-// let a = 3.45690909;
+let a = 3.45690909;
 // // let a = 3.5690909;
 
-// let b = Math.round(a)
+let b = Math.round(a)
 
 // console.log(a)
-// console.log(b)
+console.log(b)
 
 // ************ trunc() ************
 

@@ -83,7 +83,7 @@
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
 // console.log(`Before : ${txt}`)
-// let txtMethod = txt.indexOf("ip")
+// let txtMethod = txt.indexOf("s")
 // console.log(`After : ${txtMethod}`)
 
 // *******************lastIndexOf()*******************
@@ -113,9 +113,9 @@
 
 // *******************charAt()*******************
 
-// let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+// let txt = "Lorem iPsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt}`)
+// console.log(`Before : ${txt.charAt(5)}`)
 // let txtMethod = txt.charAt(6)
 // console.log(`After : ${txtMethod}`)
 
@@ -123,14 +123,17 @@
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt}`)
+// console.log(`Before : ${txt.charCodeAt(5)}`)
 // let txtMethod = txt.charCodeAt(6)
 // console.log(`After : ${txtMethod}`)
 
 // *******************fromCharCode()*******************
 
+
+// let a = String.fromCodePoint(34)
 // let txtMethod = String.fromCharCode(3)
 // console.log(`${txtMethod}`)
+// console.log(`${a}`)
 
 // *******************concat()*******************
 
@@ -172,7 +175,7 @@
 // let txtMethod = txt.substr(2,6)  //second parameter use for how many characters we want to pick
 // console.log(`After : ${txtMethod}`)
 
-// *******************substrind()*******************
+// *******************substring()*******************
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
@@ -180,11 +183,4 @@
 // let txtMethod = txt.substring(2,6)  //second parameter use like a slice but it needs + 1 end position
 // console.log(`After : ${txtMethod}`)
 
-// *******************slice()*******************
-
-// let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-
-// console.log(`Before : ${txt}`)
-// let txtMethod = txt.slice(2,6)
-// console.log(`After : ${txtMethod}`)
 

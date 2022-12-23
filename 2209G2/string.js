@@ -3,35 +3,23 @@
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
-// let a = txt.length
-
-// console.log(a)
-
 // console.log(`Before : ${txt}`)
 // let txtLength = txt.length
-// console.log(`After : ${txtLength}`)
-
+// console.log(`After : ${txtMethod}`)
 
 // *******************toString()*******************
 
-
 // let num = 78
-
 
 // console.log(num)
 // console.log(num.toString())
-
-// console.log(num)
 // let txtMethod = num.toString()
 // console.log(txtMethod)
 
 
 // *******************toLowerCase()*******************
 
-// let txt = "Lorem IPSUm dolor sit amet consectetur adipisicing elit."
-
-// console.log(txt)
-// console.log(txt.toLowerCase())
+// let txt = "Lorem ipsum DOLOR sit aMET consectetur adipisicing elit."
 
 // console.log(`Before : ${txt}`)
 // let txtMethod = txt.toLowerCase()
@@ -45,38 +33,29 @@
 // let txtMethod = txt.toUpperCase()
 // console.log(`After : ${txtMethod}`)
 
-
 // *******************includes()*******************
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-
-// console.log(txt)
-// console.log(txt.includes("IPSUM"))
 
 // console.log(`Before : ${txt}`)
 // let txtMethod = txt.includes("ipsum")
 // console.log(`After : ${txtMethod}`)
 
-
 // *******************startWith()*******************
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-
-// console.log(txt.startsWith("L"))
 
 // console.log(`Before : ${txt}`)
 // let txtMethod = txt.startsWith("Lorem")
 // console.log(`After : ${txtMethod}`)
 
-
 // *******************endsWith()*******************
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt.endsWith()}`)
+// console.log(`Before : ${txt}`)
 // let txtMethod = txt.endsWith("elit.")
 // console.log(`After : ${txtMethod}`)
-
 
 // *******************search()*******************
 
@@ -88,7 +67,7 @@
 
 // *******************match()*******************
 
-// let txt = "Lorem ipsum dolor sit amet consectetur sit adipisicing elit."
+// let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
 // console.log(`Before : ${txt}`)
 // // let txtMethod = txt.match(/ip/g)
@@ -97,7 +76,7 @@
 
 // *******************indexOf()*******************
 
-// let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+// let txt = "Lorem ipsum dolor sit amet consectetur dolor adipisicing elit."
 
 // console.log(`Before : ${txt}`)
 // let txtMethod = txt.indexOf("ip")
@@ -124,7 +103,7 @@
 
 // let txt = "        Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt.trim()}`)
+// console.log(`Before : ${txt}`)
 // let txtMethod = txt.trim()
 // console.log(`After : ${txtMethod}`)
 
@@ -138,15 +117,15 @@
 
 // *******************charCodeAt()*******************
 
-// let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+// let txt = "LoreM ipsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt}`)
+// console.log(`Before : ${txt.charCodeAt(4)}`)
 // let txtMethod = txt.charCodeAt(6)
 // console.log(`After : ${txtMethod}`)
 
 // *******************fromCharCode()*******************
 
-// let txtMethod = String.fromCharCode(72)
+// let txtMethod = String.fromCharCode(35)
 // console.log(`${txtMethod}`)
 
 // *******************concat()*******************
@@ -177,7 +156,7 @@
 
 // let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt}`)
+// console.log(`Before : ${txt.slice(7,2)}`)
 // let txtMethod = txt.slice(2,6)
 // console.log(`After : ${txtMethod}`)
 
@@ -191,9 +170,9 @@
 
 // *******************substring()*******************
 
-// let txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+//  txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
-// console.log(`Before : ${txt}`)
+// console.log(`Before : ${txt.substring(7,2)}`)
 // let txtMethod = txt.substring(2,6)  //second parameter use like a slice but it needs + 1 end position
 // console.log(`After : ${txtMethod}`)
 
