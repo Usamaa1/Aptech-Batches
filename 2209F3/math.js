@@ -2,10 +2,13 @@
 
 // let a = 10;
 
-// let userData = 10**1000
+// let userData = 100;
 
+// console.log(userData)
 
+// let b = Number.isFinite(userData);
 
+// console.log(b)
 
 
 // let b = Number.isFinite(a)
@@ -18,8 +21,9 @@
 
 // ************ isInteger() ************
 
-// let a = 34.7;
+// let a = 34;
 
+// let b = Number.isInteger(a)
 // let b = Number.isInteger(a)
 
 // console.log(a)
@@ -31,6 +35,7 @@
 // let a = 3.45690909888998778999888899998788999876543334566654456776567;
 
 // let b = a.toFixed(2)
+// let b = a.toFixed(2)
 
 // console.log(a)
 // console.log(b)
@@ -40,16 +45,20 @@
 
 // let a = 3.45690909;
 
+// let b = a.toPrecision(4)
 // let b = a.toPrecision(3)
 
 // console.log(a)
 // console.log(b)
 
 
+
+
 // ************ ciel() ************
 
-// let a = 3.45690909;
+// let a = 3.25690909;
 
+// let b = Math.ceil(a)
 // let b = Math.ceil(a)
 
 // console.log(a)
@@ -58,7 +67,7 @@
 
 // ************ floor() ************
 
-// let a = 3.45690909;
+// let a = 3.95690909;
 
 // let b = Math.floor(a)
 
@@ -68,8 +77,11 @@
 
 // ************ round() ************
 
-// let a = 3.45690909;
+// let a = 3.49690909;
 // // let a = 3.5690909;
+
+
+// let b = Math.round(a)
 
 // let b = Math.round(a)
 
@@ -78,8 +90,9 @@
 
 // ************ trunc() ************
 
-// let a = 3.45690909;
+// let a = 3.99690909;
 
+// let b = Math.trunc(a)
 // let b = Math.trunc(a)
 
 // console.log(a)
@@ -113,8 +126,8 @@
 
 // ************ PI ************
 
-// console.log(Math.PI)
+// console.log(Math.PI * Math.pow(4,2))
 
-// ************ PI ************
+// ************ abs ************
 
 // console.log(Math.abs(-10))
