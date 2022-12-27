@@ -777,7 +777,19 @@
 
 // ***********MAP*************
 
+// temps.map((eachItems)=>{
+//     eachItems = eachItems * eachItems
+//     console.log(eachItems)
+//     // document.write(eachItems)
+// })
 
+
+// console.log("_____________________________")
+
+// temps.forEach((element) => {
+//     element = element * element
+//     console.log(element)
+// });
 
 // temps.map((eachItem, i)=>{
 // // console.log(i, eachItem);

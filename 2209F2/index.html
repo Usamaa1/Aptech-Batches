@@ -6,10 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- <script src="arrays.js"></script> -->
+
+    <style>
+        body{
+            font-family: "Amazon Ember",Arial,sans-serif;
+        }
+    .main-wrapper{
+        display: flex;
+    }
+    </style>
 </head>
 <body>
     
     <!-- <script src="string.js"></script> -->
-    <script src="math.js"></script>
+    <!-- <script src="math.js"></script> -->
+    <!-- <script src="date.js"></script> -->
+
+
+    <script> 
+    let products = [
+        ["https://m.media-amazon.com/images/I/81-nE4e2YvL._AC_UY218_.jpg","Mouse","SteelSeries Aerox 5 Wireless - Lightweight Wireless Gaming Mouse - 18000 CPI -- TrueMove Air Optical Sensor - Ultra-lightweight Water Resistant Design – 180+ Hour Battery Life", 8900, 3.4],
+        ["https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg","Keyboard","SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade", 5600, 4.2],
+     
+    ]
+    
+
+    console.log(products);
+
+    for(i=0; i < products.length; i++){
+        document.write(`
+        <div class="main-wrapper">
+        <img src = '${products[i][0]}'> 
+        <div class='text-wrapper'>
+        <h1>${products[i][1]}</h1> 
+        <h4>${products[i][2]}</h4> 
+        <div>Rs : ${products[i][3]}</div> 
+        <div>Rs : ${products[i][4]}</div>
+        </div>
+        </div>
+        `)
+
+    }
+
+   
+
+
+    
+    </script>
+
+
+
+
+
+
 </body>
 </html>
