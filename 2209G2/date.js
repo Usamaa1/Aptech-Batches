@@ -62,8 +62,8 @@ console.log(currentDate)
 // console.log(currentDate.setDay())
 
 //************ setHours *************/ 
-currentDate.setSeconds(10)
-console.log(currentDate)
+// currentDate.setSeconds(10)
+// console.log(currentDate)
 // console.log(currentDate.setHours())
 
 //************ setMinutes *************/ 
