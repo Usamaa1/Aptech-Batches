@@ -1,7 +1,19 @@
+// let a =9
+// let b = 10
 // function add(){
-// let result = a + b
-//  return result;
+//     let a = 80
+//     let result = a + b
+// return result;
 // }
+// console.log(a)
+
+// console.log(add())
+
+
+
+
+
+
 
 
 // ES6 arrow function
@@ -39,11 +51,25 @@
 
 
 
+// let arrays = [2,3,5,7,8,99,12]
+
+// for(i=0; i<arrays.length; i++){
+//     console.log(arrays[i], i)
+// }
+
+// console.log("-------------------Map()-----------------------")
 
 
+// arrays.map((a,i)=>{
+//     console.log(a,i)
+// })
 
+// console.log("-------------------For Each-----------------------")
 
-
+// arrays.forEach(a => {
+//     console.log(a)
+    
+// });
 
 
 
@@ -58,3 +84,8 @@
 // add(3,6)
 // add(21,6)
 // add(9,6)
+
+
+
+
+

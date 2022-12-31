@@ -599,6 +599,69 @@
 
 
 
+// **********some()************          //find 1st value via conditions and return values in true or false
+// let ages = ["hassan","ali","ayaan"];
+
+// let myfunction = age => age >= 18;
+
+// let b = ages.some(a => a === "hassan")
+// console.log(b)
+
+// b = ages.some(myfunction)
+
+// console.log(b)
+
+// **********every()************        //find all values via conditions and return values in true or false
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+// let ages = ["d","sd","td"];
+
+// let myfunction = age => age <= 18;
+
+// let b = ages.findIndex(a => a >= 18)
+
+// b = ages.every(myfunction)
+
+// document.write(b)
+// console.log(b)
+
+
+
+// **********find()************     //find first value via conditions and return actual values
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.find(myfunction)
+
+// document.write(b)
+
+
+
+
+// **********findIndex()************    //find first values via conditions and return index
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.findIndex(myfunction)
+
+// document.write(b)
+
+
+
+// **********filter()************    //find all values based on coditions and place on new array
+
+// let ages = [43,18,2,6,83,3,6,9,6,342,4,7,83,7,34,334,23]
+
+// let myfunction = age => age >= 18;
+
+// let b = ages.filter(myfunction);
+
+// document.write(b)
+
 
 
 
@@ -961,20 +1024,20 @@
 
 // ***********Multidimensional Array*************
 
-let products = [["https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg","Keyboard", "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade", 4500, 3.7],
-["https://m.media-amazon.com/images/I/811-0kItnvL._AC_UY218_.jpg","Wireless Keyboard", "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade Anti-Ghosting", 2300, 4.5],
-["https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_UY218_.jpg","Lazer Keyboard", "Razer Ornata Chroma Gaming Keyboard: Hybrid Mechanical Key Switches - Customizable Chroma RGB Lighting - Individually Backlit Keys - Detachable Plush Wrist Rest - Programmable", 3440, 3.8],
-["https://m.media-amazon.com/images/I/71qWTIo8XSL._AC_UY218_.jpg","Dell Keyboard", "KLIM Chroma Wireless Gaming Keyboard RGB New 2022 Version - Long-Lasting Rechargeable Battery - Quick and Quiet Typing - Water Resistant Backlit Wireless Keyboard for PC PS5 PS4", 678000, 4.3]
-]
+// let products = [["https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg","Keyboard", "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade", 4500, 3.7],
+// ["https://m.media-amazon.com/images/I/811-0kItnvL._AC_UY218_.jpg","Wireless Keyboard", "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade Anti-Ghosting", 2300, 4.5],
+// ["https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_UY218_.jpg","Lazer Keyboard", "Razer Ornata Chroma Gaming Keyboard: Hybrid Mechanical Key Switches - Customizable Chroma RGB Lighting - Individually Backlit Keys - Detachable Plush Wrist Rest - Programmable", 3440, 3.8],
+// ["https://m.media-amazon.com/images/I/71qWTIo8XSL._AC_UY218_.jpg","Dell Keyboard", "KLIM Chroma Wireless Gaming Keyboard RGB New 2022 Version - Long-Lasting Rechargeable Battery - Quick and Quiet Typing - Water Resistant Backlit Wireless Keyboard for PC PS5 PS4", 678000, 4.3]
+// ]
 
 
 
- for(i=0; i< products.length; i++){
+//  for(i=0; i< products.length; i++){
 
 
-    document.write(`<img src= '${products[i][0]}'> <h1>${products[i][1]}</h1> <h3>${products[i][2]}</h3> <p>Rs : ${products[i][3]}</p> <p>Rating : ${products[i][4]}</p>`)
+//     document.write(`<img src= '${products[i][0]}'> <h1>${products[i][1]}</h1> <h3>${products[i][2]}</h3> <p>Rs : ${products[i][3]}</p> <p>Rating : ${products[i][4]}</p>`)
 
- }
+//  }
 
 
 
