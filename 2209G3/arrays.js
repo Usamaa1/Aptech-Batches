@@ -625,6 +625,68 @@
 // document.write(cars.fill("Hello"))
 
 
+// **********some()************          //find 1st value via conditions and return values in true or false
+// let ages = [2,4,6,7,45,23,4,18,56,8,6,23,23];
+
+
+// console.log(ages.findIndex(age => age > 18))
+
+// let myfunction = age => age >= 18;
+
+// b = ages.some(myfunction)
+
+// document.write(b)
+
+
+// **********every()************        //find all values via conditions and return values in true or false
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age <= 18;
+
+// b = ages.every(myfunction)
+
+// document.write(b)
+
+
+
+// **********find()************     //find first value via conditions and return actual values
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.find(myfunction)
+
+// document.write(b)
+
+
+
+
+// **********findIndex()************    //find first values via conditions and return index
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.findIndex(myfunction)
+
+// document.write(b)
+
+
+
+// **********filter()************    //find all values based on coditions and place on new array
+
+// let ages = [43,18,2,6,83,3,6,9,6,342,4,7,83,7,34,334,23]
+
+// let myfunction = age => age >= 18;
+
+// let b = ages.filter(myfunction);
+
+// document.write(b)
+
+
+
 
 
 // let productItems = [["https://i.picsum.photos/id/76/200/300.jpg?hmac=SWpe2KMM2qFiQ8C8WHIZilaJb7KVkgOVVJPTbasGyUU","CC364A - 64A", "Product details of CC364A - 64A | Black iAicon | Compatible Toner Cartridge For Laser Jet Enterprise M4555H MFP | M4555T MFP | Las", 45000, 4.5], ["https://picsum.photos/seed/picsum/200/300","Imaging Plus", "Printing Made EasyFor Models 1005, 1006, 1010, 1012, 1020, 1100, 1200, 1300, 1320, 2015, 2035, 2055, 2400, 2420, 3005, 4200, 4250, 900, 9050Refill Your Laser Printer Toner In homeHp Imaging Plus Powder for all tonersBlack powder250gRefill 3-4 timesEasy RefillingLow cost Refilling", 76900, 3.7]]
