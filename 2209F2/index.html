@@ -8,11 +8,14 @@
     <!-- <script src="arrays.js"></script> -->
 
     <style>
-        body{
+        /* body{
             font-family: "Amazon Ember",Arial,sans-serif;
         }
     .main-wrapper{
         display: flex;
+    } */
+    .txt{
+        color: blue;
     }
     </style>
 </head>
@@ -21,34 +24,50 @@
     <!-- <script src="string.js"></script> -->
     <!-- <script src="math.js"></script> -->
     <!-- <script src="date.js"></script> -->
+    <!-- <script src="function.js" defer></script> -->
+    <script src="objects.js"></script>
+    <!-- <script src="arrays.js" defer></script> -->
+
+
+
+    <!-- <form onclick="add()" return false>
+        <input id="a" type="number" name="" id="">
+        <input id="b" type="number" name="" id="">
+        <input type="submit">
+    </form> -->
+
+
+    <!-- <h1 id="t"></h1> -->
 
 
     <script> 
-    let products = [
-        ["https://m.media-amazon.com/images/I/81-nE4e2YvL._AC_UY218_.jpg","Mouse","SteelSeries Aerox 5 Wireless - Lightweight Wireless Gaming Mouse - 18000 CPI -- TrueMove Air Optical Sensor - Ultra-lightweight Water Resistant Design – 180+ Hour Battery Life", 8900, 3.4],
-        ["https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg","Keyboard","SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade", 5600, 4.2],
+    // let products = [
+    //     ["https://m.media-amazon.com/images/I/81-nE4e2YvL._AC_UY218_.jpg","Mouse","SteelSeries Aerox 5 Wireless - Lightweight Wireless Gaming Mouse - 18000 CPI -- TrueMove Air Optical Sensor - Ultra-lightweight Water Resistant Design – 180+ Hour Battery Life", 8900, 3.4],
+    //     ["https://m.media-amazon.com/images/I/81dLH5W903L._AC_UY218_.jpg","Keyboard","SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade", 5600, 4.2],
      
-    ]
+    // ]
     
 
-    console.log(products);
+    // console.log(products);
 
-    for(i=0; i < products.length; i++){
-        document.write(`
-        <div class="main-wrapper">
-        <img src = '${products[i][0]}'> 
-        <div class='text-wrapper'>
-        <h1>${products[i][1]}</h1> 
-        <h4>${products[i][2]}</h4> 
-        <div>Rs : ${products[i][3]}</div> 
-        <div>Rs : ${products[i][4]}</div>
-        </div>
-        </div>
-        `)
+    // for(i=0; i < products.length; i++){
+    //     document.write(`
+    //     <div class="main-wrapper">
+    //     <img src = '${products[i][0]}'> 
+    //     <div class='text-wrapper'>
+    //     <h1>${products[i][1]}</h1> 
+    //     <h4>${products[i][2]}</h4> 
+    //     <div>Rs : ${products[i][3]}</div> 
+    //     <div>Rs : ${products[i][4]}</div>
+    //     </div>
+    //     </div>
+    //     `)
 
-    }
+    // }
 
    
+
+
 
 
     

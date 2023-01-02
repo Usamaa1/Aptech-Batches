@@ -635,6 +635,68 @@
 // document.write(cars.fill("Hello"))
 
 
+// **********some()************          //find 1st value via conditions and return values in true or false
+// let ages = [4,6,78,8,9,62,64,66,77,2];
+
+// let myfunction = age => age >= 18;
+
+// console.log(ages.toString(ages.filter(age => age > 18)))
+
+// b = ages.some(myfunction)
+
+// document.write(b)
+
+
+// **********every()************        //find all values via conditions and return values in true or false
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age <= 18;
+
+// b = ages.every(myfunction)
+
+// document.write(b)
+
+
+
+// **********find()************     //find first value via conditions and return actual values
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.find(myfunction)
+
+// document.write(b)
+
+
+
+
+// **********findIndex()************    //find first values via conditions and return index
+
+// let ages = [2,4,6,7,8,6,4,45,23,18,56,23,23];
+
+// let myfunction = age => age >= 18;
+
+// b = ages.findIndex(myfunction)
+
+// document.write(b)
+
+
+
+// **********filter()************    //find all values based on coditions and place on new array
+
+// let ages = [43,18,2,6,83,3,6,9,6,342,4,7,83,7,34,334,23]
+
+// let myfunction = age => age >= 18;
+
+// let b = ages.filter(myfunction);
+
+// document.write(b)
+
+
+
+
 
 // ************Multidimensional Arrays************
 
