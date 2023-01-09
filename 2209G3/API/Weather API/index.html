@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <script src="weatherapp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="glass">
+            <form action="" onsubmit="weather(); return false">
+                <!-- <label for="">Enter your location</label> -->
+                <input type="text" name="" placeholder="Enter your location" id="userInput">
+                <input type="submit" name="" id="sub">
+            </form>
+            <div class="weather-info">
+                <img src="" alt="" srcset="" id="weatherImage">
+                <div id="temp"></div>
+                <div id="weatherCondition"></div>
+             
+                
+            </div>
+            <div class="weather-box">
+                <div>
+                    <div id="humidity"></div>
+                    <div class="h-text">Humidity</div>
+                </div>
+               <div>
+                <div id="windDir"></div>
+                <div class="h-text">Wind Direction</div>
+               </div>
+               <div>
+                <div id="windKPH"></div>
+                <div class="h-text">Wind Kilo Per Hour</div>
+               </div>
+                
+            </div>  
+        </div>
+        
+    </div>
+
+
+    
+</body>
+</html>
