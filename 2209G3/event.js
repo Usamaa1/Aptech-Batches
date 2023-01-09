@@ -52,38 +52,46 @@
 
 
 
-// let canva = document.getElementById("draw").getContext("2d");
+let canva = document.getElementById("draw").getContext("2d");
+
+let clr;
+
+function clrSelect() {
+  clr = document.getElementById('clr').value
+    console.log(clr)
+    
+}
 
 
 
-
-// let isBollean = false
-
-
-// document.querySelector('#draw').addEventListener('mousedown', (e) => {
-//     isBollean = true
-//     console.log("mouse down")
-// })
-
-// document.querySelector('#draw').addEventListener('mouseup', (e) => {
-//     isBollean = false
-//     canva.beginPath()
-//     console.log("mouse up")
-// })
-
-// document.querySelector("#draw").addEventListener('mousemove', (e) => {
-//     if (isBollean) {
-//         console.log("mouse move", e)
-//         canva.lineWidth = 3
-//         canva.lineCap = 'round'
-//         canva.lineTo(e.offsetX, e.offsetY);
-//         canva.stroke();
-//         canva.beginPath();
-//         canva.moveTo(e.offsetX, e.offsetY);
+let isBollean = false
 
 
-//     }
-// })
+document.querySelector('#draw').addEventListener('mousedown', (e) => {
+    isBollean = true
+    console.log("mouse down")
+})
+
+document.querySelector('#draw').addEventListener('mouseup', (e) => {
+    isBollean = false
+    canva.beginPath()
+    console.log("mouse up")
+})
+
+document.querySelector("#draw").addEventListener('mousemove', (e) => {
+    if (isBollean) {
+        console.log("mouse move", e)
+        canva.lineWidth = 3
+        canva.lineCap = 'round'
+        canva.lineTo(e.offsetX, e.offsetY);
+        canva.stroke();
+        canva.strokeStyle = clr;
+        canva.beginPath();
+        canva.moveTo(e.offsetX, e.offsetY);
+
+
+    }
+})
 
 
 
