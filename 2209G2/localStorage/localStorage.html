@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="userData(); return false">
+        <label for="">Name :</label>
+        <input type="text" name="" id="name">
+        <label for="">Father Name :</label>
+        <input type="text" name="" id="fname">
+        <input type="submit">
+    </form>
+
+
+    <script>
+
+        let userStorage = []
+
+    let userData = ()=>{
+        let name = document.getElementById('name').value
+        let fatherName = document.getElementById('fname').value
+
+
+        let userObj = {
+            name : name,
+            fatherName : fatherName
+        }
+
+        userStorage.push(userObj)
+
+        let stringify = JSON.stringify(userStorage)
+
+        localStorage.setItem('users',stringify)
+
+
+
+        console.log(userObj.name,userObj.fatherName)
+    }
+    </script>
+
+</body>
+</html>
