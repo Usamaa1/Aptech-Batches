@@ -8,7 +8,7 @@
 //     for(j=i; j<=i; j++){
 //         a[j] = Number(numbers[i])
 //     }
-// 
+
 
 
 // document.write(numbers)
