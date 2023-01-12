@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse Events</title>
+    <style>
+        #mouse {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(10, 60, 104);
+        }
+        #draw {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!--     
+    <div id="mouse">
+    
+    
+    </div> -->
+
+    <canvas id="draw" width="700px" height="700px"></canvas>
+    <input type="color" name="" id="clr" onchange="colr()">
+
+    <input type="button" value="Download Image in png">
+
+    <script>
+
+
+        let isMouseClicked = false
+
+        let clr;
+        function colr(){
+        clr = document.getElementById('clr').value
+
+        console.log(clr)
+        }
+
+
+
+        let canva = document.getElementById('draw').getContext('2d')
+
+
+        document.getElementById('draw').addEventListener('mouseup', (e) => {
+            isMouseClicked = false
+            canva.beginPath();
+
+            console.log(e)
+        })
+
+        document.getElementById('draw').addEventListener('mousedown', (e) => {
+            isMouseClicked = true
+            console.log(e)
+        })
+        document.getElementById('draw').addEventListener('mousemove', (e) => {
+            if (isMouseClicked) {
+                console.log(e)
+                canva.lineCap = 'round'
+                canva.lineWidth = 4
+                canva.lineTo(e.offsetX, e.offsetY);
+                canva.stroke();
+                canva.strokeStyle = clr
+                canva.beginPath();
+                canva.moveTo(e.offsetX, e.offsetY);
+            }
+
+        })
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
