@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RegEx</title>
+    <style>
+    #result{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <input type="text" name="" id="key" onkeyup="reg()">
+
+    <h3 id ='result'></h3>
+
+
+    <script>
+    
+    function reg(){
+        let a = document.getElementById('key').value
+        let res = document.getElementById('result')
+        console.log(a)
+
+        let valid = /^[a-zA-Z0-9]{3,9}$/g
+
+
+
+            if(valid.test(a)){
+
+                document.getElementById('result').innerHTML = ''
+
+            }else{
+                document.getElementById('result').innerHTML = 'kindly enter valid number'
+
+            }
+
+
+    }
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(1); */
+}
+#userInput{
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+#search{
+    padding: 5px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: #fff;
+
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.result-weather{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(216, 191, 216, 0.753);
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Session Storage</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="userData(); return false">
+        <input type="text" name="" id="userName">
+        <input type="text" name="" id="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script>
+
+
+
+
+        let userArray = []
+
+    let userData = ()=>{
+        let user = document.getElementById('userName').value
+        let fatherName = document.getElementById('fname').value
+
+        // console.log(user, fatherName);
+
+
+        let userObj = {
+            user,
+            fatherName
+        }
+
+
+        console.log(userObj)
+
+
+        userArray.push(userObj)
+
+        // console.log(userArray)
+        let stringified = JSON.stringify(userArray);
+
+        console.log(stringified)
+
+
+
+        localStorage.setItem('userValues', stringified)
+
+
+        let a = JSON.parse(localStorage.getItem('userValues'))
+
+        
+        console.log(a[0].fatherName)
+
+    }
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
